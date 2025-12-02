@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kevin King — AI Creative Technologist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="AI Creative Technologist / Maker / Python Backend Engineer — portfolio, projects, and contact."
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Basic Tailwind config (optional, can tweak) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: "#f5f3ff",
+              100: "#ede9fe",
+              200: "#ddd6fe",
+              500: "#7c3aed",  /* primary accent */
+              600: "#6d28d9",
+              900: "#4c1d95",
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Optional: Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+  <div class="min-h-screen flex flex-col">
+    <!-- NAVBAR -->
+    <header class="border-b border-slate-800/60 bg-slate-950/80 backdrop-blur">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-9 rounded-xl bg-brand-500 flex items-center justify-center text-sm font-bold">
+            KKS
+          </div>
+          <span class="text-sm sm:text-base font-semibold tracking-tight">
+            Kevin King Sojourner
+          </span>
+        </div>
+        <nav class="hidden sm:flex items-center gap-6 text-xs sm:text-sm text-slate-300">
+          <a href="#about" class="hover:text-brand-200 transition">About</a>
+          <a href="#skills" class="hover:text-brand-200 transition">Skills</a>
+          <a href="#projects" class="hover:text-brand-200 transition">Projects</a>
+          <a href="#contact" class="hover:text-brand-200 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-16">
+
+        <!-- HERO SECTION -->
+        <section class="grid md:grid-cols-[3fr,2fr] gap-10 items-center">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-200 mb-3">
+              AI Creative Technologist / Maker / Automation Developer
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+              I build AI-powered automations,<br class="hidden sm:block" />
+              backends & creative tools.
+            </h1>
+            <p class="text-sm sm:text-base text-slate-300 max-w-xl mb-6">
+              I’m Kevin, a Python + Django backend developer with 4+ years of experience at Animaker.
+              I’m transitioning into AI technology – This page will be portfolio for my transition into a AI focused carreer transition.
+              I will be sharing my upcoming AI projects, skills, Achievements, and contact info here.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium bg-brand-500 hover:bg-brand-600 text-white shadow-lg shadow-brand-500/30 transition"
+              >
+                View upcoming AI projects
+              </a>
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-slate-700 hover:border-brand-500 hover:text-brand-100 transition"
+              >
+                Collaborate / Hire me
+              </a>
+            </div>
+
+            <p class="mt-4 text-xs text-slate-400">
+                • Based in India • Open to remote AI/backend roles
+            </p>
+          </div>
+
+          <!-- SIDE CARD -->
+          <div class="md:justify-self-end">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:p-6 shadow-xl shadow-black/40">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400 mb-3">
+                CURRENT FOCUS
+              </p>
+              <ul class="space-y-3 text-sm text-slate-200">
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500"></span>
+                  <div>
+                    <p class="font-medium">AI Automation & Tools</p>
+                    <p class="text-xs text-slate-400">
+                      Building small, useful AI-powered tools for creators & businesses.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500"></span>
+                  <div>
+                    <p class="font-medium">Backend for AI Products</p>
+                    <p class="text-xs text-slate-400">
+                      Robust Django APIs, queues & infra to support AI workloads.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-500"></span>
+                  <div>
+                    <p class="font-medium">Creative Workflows</p>
+                    <p class="text-xs text-slate-400">
+                      Video, image & content workflows with AI + automation.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT / STORY -->
+        <section id="about" class="space-y-4">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
+            <span class="h-5 w-0.5 rounded-full bg-brand-500"></span>
+            My Story
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8 text-sm sm:text-base text-slate-300">
+            <p>
+              I’ve spent the last 4+ years as a backend developer at Animaker Inc, working on
+              real products used by creators at scale. I enjoy building stable systems, 
+              clean APIs, and tools that others can rely on.
+            </p>
+            <p>
+              Now I’m deliberately moving into AI – combining my backend skills with AI workflows,
+              automation, and creative tech. I’m especially interested in tools that help
+              creators, small businesses and makers do more with less.
+            </p>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="space-y-6">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
+            <span class="h-5 w-0.5 rounded-full bg-brand-500"></span>
+            Skills & Stack
+          </h2>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- AI & Automation -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 mb-3">
+                AI & Automation
+              </p>
+              <ul class="space-y-2 text-sm text-slate-200">
+                <li>Generative AI prompting</li>
+                <li>AI workflow design</li>
+                <li>Automation & integration</li>
+                <li>Image / video model experimentation</li>
+              </ul>
+            </div>
+
+            <!-- Backend Engineering -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 mb-3">
+                Backend Engineering
+              </p>
+              <ul class="space-y-2 text-sm text-slate-200">
+                <li>Python, Django</li>
+                <li>REST APIs, JSON</li>
+                <li>AI integerations</li>
+
+              </ul>
+            </div>
+
+            <!-- Creative Tech -->
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 mb-3">
+                Creative Tech & Tools
+              </p>
+              <ul class="space-y-2 text-sm text-slate-200">
+                <li>ComfyUI experiments</li>
+                <li>Video workflows, DaVinci Resolve</li>
+                <li>Photography & content pipelines</li>
+                <li>Prompt engineering habits & systems</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS (COMING SOON) -->
+        <section id="projects" class="space-y-4">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
+            <span class="h-5 w-0.5 rounded-full bg-brand-500"></span>
+            Upcoming AI Projects
+          </h2>
+          <p class="text-sm text-slate-400">
+            These are in progress as part of my 6-month roadmap. Currently in planning / prototype mode.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <article class="relative rounded-2xl border border-dashed border-slate-800 bg-gradient-to-br from-slate-900/80 to-slate-950/80 p-5 flex flex-col justify-between">
+              <div>
+                <p class="inline-flex px-2 py-0.5 rounded-full text-[0.6rem] font-semibold tracking-[0.18em] uppercase bg-slate-900 text-slate-300 mb-3">
+                  Coming Soon
+                </p>
+                <h3 class="text-sm sm:text-base font-semibold mb-2">
+                  Latest Tech News To Reels Generator for Creators
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-400 mb-3">
+                  A small tool that helps creators turn their source of tech news,
+                  into  short-form video sequences using AI + automation.
+                </p>
+              </div>
+              <p class="text-[0.7rem] text-slate-500">
+                Stack: Django API, background workers, video AI models, prompt workflows.
+              </p>
+              <div class="absolute inset-0 rounded-2xl border border-slate-800/60 pointer-events-none"></div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="relative rounded-2xl border border-dashed border-slate-800 bg-gradient-to-br from-slate-900/80 to-slate-950/80 p-5 flex flex-col justify-between">
+              <div>
+                <p class="inline-flex px-2 py-0.5 rounded-full text-[0.6rem] font-semibold tracking-[0.18em] uppercase bg-slate-900 text-slate-300 mb-3">
+                  Coming Soon
+                </p>
+                <h3 class="text-sm sm:text-base font-semibold mb-2">
+                  Smart Delivery Tracking + Video Logging
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-400 mb-3">
+                  Combines real-world bike delivery runs with automatic logging,
+                  small video snippets and analytics powered by AI summarisation.
+                </p>
+              </div>
+              <p class="text-[0.7rem] text-slate-500">
+                Stack: Django, simple mobile-friendly UI, AI summarisation, storage.
+              </p>
+              <div class="absolute inset-0 rounded-2xl border border-slate-800/60 pointer-events-none"></div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="relative rounded-2xl border border-dashed border-slate-800 bg-gradient-to-br from-slate-900/80 to-slate-950/80 p-5 flex flex-col justify-between">
+              <div>
+                <p class="inline-flex px-2 py-0.5 rounded-full text-[0.6rem] font-semibold tracking-[0.18em] uppercase bg-slate-900 text-slate-300 mb-3">
+                  Coming Soon
+                </p>
+                <h3 class="text-sm sm:text-base font-semibold mb-2">
+                  AI Baby Studio Workflow Automator
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-400 mb-3">
+                  A workflow to help baby photo studios manage shoots, assets,
+                  AI-assisted edits and deliveries with minimal manual work.
+                </p>
+              </div>
+              <p class="text-[0.7rem] text-slate-500">
+                Stack: Django backend, ComfyUI / image models, task queues, notifications.
+              </p>
+              <div class="absolute inset-0 rounded-2xl border border-slate-800/60 pointer-events-none"></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- CONTACT / LINKS -->
+        <section id="contact" class="space-y-4">
+          <h2 class="text-lg sm:text-xl font-semibold tracking-tight flex items-center gap-2">
+            <span class="h-5 w-0.5 rounded-full bg-brand-500"></span>
+            Contact & Links
+          </h2>
+          <p class="text-sm text-slate-300 mb-2">
+            I’m open to:
+          </p>
+          <ul class="text-sm text-slate-300 list-disc list-inside mb-4 space-y-1">
+            <li>AI-related backend roles (remote / hybrid)</li>
+            <li>Small AI tools / automation consulting for Indian creators & studios</li>
+            <li>Collaborations on open-source or experimental AI projects</li>
+          </ul>
+
+          <!-- Update these hrefs with your real profiles -->
+          <div class="flex flex-wrap gap-3 text-sm">
+            <a
+              href="https://github.com/kevin-king-2597"
+              target="_blank"
+              class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-4 py-2 hover:border-brand-500 hover:text-brand-100 transition"
+            >
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kevin-king-sojourner/"
+              target="_blank"
+              class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-4 py-2 hover:border-brand-500 hover:text-brand-100 transition"
+            >
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="mailto:kevinking2597@gmail.com?subject=AI%20Collaboration%20/ %20Opportunity"
+              class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-4 py-2 hover:border-brand-500 hover:text-brand-100 transition"
+            >
+              <span>Email</span>
+            </a>
+            <!-- Optional: Notion / Blog -->
+            <!-- <a
+              href="#"
+              class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-4 py-2 hover:border-brand-500 hover:text-brand-100 transition"
+            >
+              <span>Notion / Blog</span>
+            </a> -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/60 mt-10">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <p class="text-[0.7rem] text-slate-500">
+          © <span id="year"></span> Kevin King — AI Creative Technologist
+        </p>
+        <p class="text-[0.7rem] text-slate-600">
+          Built with Python energy, late evenings & chai.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
